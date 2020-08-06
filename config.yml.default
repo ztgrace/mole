@@ -1,0 +1,32 @@
+token:
+  domain: example.com
+  length: 5
+  ssl: false
+  server: 127.0.0.1:80
+  default_tags: 
+    - demo
+server:
+    web_port: 80
+    dns_port: 53
+    db_conn: sqlite:///mole.db
+    api_key: <replace with a unique api key>
+    dns_addr: 1.1.1.1
+    static_responses:
+        ns1.example.com: 1.1.1.1
+        ns2.example.com: 1.1.1.1
+notifications:
+  mailgun:
+    enabled: false
+    domain: 
+    to: 
+    from: 
+    subject: Mole OOB Payload Notification
+    api_key: 
+  slack:
+    enabled: false
+    token:
+    channel:
+  webhook:
+    enabled: false
+    url:
+

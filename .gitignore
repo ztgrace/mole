@@ -1,0 +1,12 @@
+*.class
+*.json
+*.pyc
+*.swp
+__pycache__
+burp_venv
+config.yml
+mole.db
+output
+venv
+.idea
+mole.iml

